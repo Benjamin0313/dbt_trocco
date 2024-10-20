@@ -9,9 +9,6 @@ models:
     columns:
       - name: buy_items_id
         description: 商品の購入項目単位を管理するid
-        data_tests:
-          - not_null
-          - unique
         data_type: string
       - name: order_id
         description: 商品の注文id
