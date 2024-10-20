@@ -1,0 +1,270 @@
+[0m00:39:54.840382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e24340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108912b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108912e90>]}
+
+
+============================== 00:39:54.844504 | aebf81f1-f6fe-4951-8143-46a6c25b1a29 ==============================
+[0m00:39:54.844504 [info ] [MainThread]: Running with dbt=1.7.18
+[0m00:39:54.845067 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/daisuke.harato/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:40:03.841450 [debug] [MainThread]: Starter project path: /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m00:40:03.854383 [info ] [MainThread]: 
+Your new dbt project "dbt_trocco_pj" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:40:03.855051 [info ] [MainThread]: Setting up your profile.
+[0m00:41:06.195639 [info ] [MainThread]: Profile dbt_trocco_pj written to /Users/daisuke.harato/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:41:06.227063 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 71.46486, "process_user_time": 2.06303, "process_kernel_time": 0.266397, "process_mem_max_rss": "102514688", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:41:06.229877 [debug] [MainThread]: Command `dbt init` succeeded at 00:41:06.228956 after 71.47 seconds
+[0m00:41:06.232396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e24340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108912ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108912230>]}
+[0m00:41:06.234158 [debug] [MainThread]: Flushing usage events
+[0m00:42:33.253008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fa1390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a8eb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a8eec0>]}
+
+
+============================== 00:42:33.259134 | 369d6cdc-a9d1-4202-addb-36b5a4932dbb ==============================
+[0m00:42:33.259134 [info ] [MainThread]: Running with dbt=1.7.18
+[0m00:42:33.260135 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/daisuke.harato/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:42:33.260960 [info ] [MainThread]: dbt version: 1.7.18
+[0m00:42:33.261524 [info ] [MainThread]: python version: 3.10.10
+[0m00:42:33.262089 [info ] [MainThread]: python path: /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/venv/bin/python
+[0m00:42:33.262492 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m00:42:33.509039 [info ] [MainThread]: Using profiles dir at /Users/daisuke.harato/.dbt
+[0m00:42:33.509571 [info ] [MainThread]: Using profiles.yml file at /Users/daisuke.harato/.dbt/profiles.yml
+[0m00:42:33.509936 [info ] [MainThread]: Using dbt_project.yml file at /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/dbt_project.yml
+[0m00:42:33.510656 [info ] [MainThread]: adapter type: snowflake
+[0m00:42:33.511069 [info ] [MainThread]: adapter version: 1.7.0
+[0m00:42:33.511430 [info ] [MainThread]: Configuration:
+[0m00:42:33.511757 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:42:33.512063 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:42:33.512366 [info ] [MainThread]: Required dependencies:
+[0m00:42:33.512746 [debug] [MainThread]: Executing "git --help"
+[0m00:42:33.531994 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:42:33.532928 [debug] [MainThread]: STDERR: "b''"
+[0m00:42:33.533416 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:42:33.533846 [info ] [MainThread]: Connection:
+[0m00:42:33.534339 [info ] [MainThread]:   account: ar29333.ap-northeast-1.aws
+[0m00:42:33.534787 [info ] [MainThread]:   user: sysadmin
+[0m00:42:33.535175 [info ] [MainThread]:   database: d_harato_wh
+[0m00:42:33.535513 [info ] [MainThread]:   warehouse: d_harato_wh
+[0m00:42:33.535872 [info ] [MainThread]:   role: sysadmin
+[0m00:42:33.536180 [info ] [MainThread]:   schema: test
+[0m00:42:33.536495 [info ] [MainThread]:   authenticator: None
+[0m00:42:33.536835 [info ] [MainThread]:   private_key_path: None
+[0m00:42:33.537135 [info ] [MainThread]:   token: None
+[0m00:42:33.537428 [info ] [MainThread]:   oauth_client_id: None
+[0m00:42:33.537724 [info ] [MainThread]:   query_tag: None
+[0m00:42:33.538022 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:42:33.538317 [info ] [MainThread]:   host: None
+[0m00:42:33.538609 [info ] [MainThread]:   port: None
+[0m00:42:33.539299 [info ] [MainThread]:   proxy_host: None
+[0m00:42:33.539673 [info ] [MainThread]:   proxy_port: None
+[0m00:42:33.540000 [info ] [MainThread]:   protocol: None
+[0m00:42:33.540319 [info ] [MainThread]:   connect_retries: 1
+[0m00:42:33.540666 [info ] [MainThread]:   connect_timeout: None
+[0m00:42:33.540982 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:42:33.541288 [info ] [MainThread]:   retry_all: False
+[0m00:42:33.541599 [info ] [MainThread]:   insecure_mode: False
+[0m00:42:33.541903 [info ] [MainThread]:   reuse_connections: None
+[0m00:42:33.542444 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m00:42:33.561651 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:42:33.563259 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:42:33.563630 [debug] [MainThread]: On debug: select 1 as id
+[0m00:42:33.563963 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:42:36.230243 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m00:42:36.230712 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m00:42:36.231078 [debug] [MainThread]: On debug: No close available on handle
+[0m00:42:36.231659 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m00:42:36.232034 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:42:36.232362 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/dbt_project.yml> not found
+
+[0m00:42:36.232715 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: ar29333.ap-northeast-1.aws.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m00:42:36.234991 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 3.0508869, "process_user_time": 2.184005, "process_kernel_time": 0.27193, "process_mem_max_rss": "128499712", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:42:36.235639 [debug] [MainThread]: Command `dbt debug` failed at 00:42:36.235498 after 3.05 seconds
+[0m00:42:36.236002 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:42:36.236355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fa1390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071bef20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10720a710>]}
+[0m00:42:36.236771 [debug] [MainThread]: Flushing usage events
+[0m00:51:11.960255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104962f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10644ebc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10644ef50>]}
+
+
+============================== 00:51:11.964535 | 708f2847-42db-4d90-a8e7-f7c2e98017c4 ==============================
+[0m00:51:11.964535 [info ] [MainThread]: Running with dbt=1.7.18
+[0m00:51:11.965292 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:51:11.965987 [info ] [MainThread]: dbt version: 1.7.18
+[0m00:51:11.966469 [info ] [MainThread]: python version: 3.10.10
+[0m00:51:11.966795 [info ] [MainThread]: python path: /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/venv/bin/python
+[0m00:51:11.967106 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m00:51:12.214738 [info ] [MainThread]: Using profiles dir at /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco
+[0m00:51:12.215255 [info ] [MainThread]: Using profiles.yml file at /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/profiles.yml
+[0m00:51:12.215613 [info ] [MainThread]: Using dbt_project.yml file at /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/dbt_project.yml
+[0m00:51:12.216248 [info ] [MainThread]: adapter type: snowflake
+[0m00:51:12.216662 [info ] [MainThread]: adapter version: 1.7.0
+[0m00:51:12.217008 [info ] [MainThread]: Configuration:
+[0m00:51:12.217319 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:51:12.217624 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:51:12.217918 [info ] [MainThread]: Required dependencies:
+[0m00:51:12.218303 [debug] [MainThread]: Executing "git --help"
+[0m00:51:12.235410 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:51:12.236363 [debug] [MainThread]: STDERR: "b''"
+[0m00:51:12.236745 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:51:12.237091 [info ] [MainThread]: Connection:
+[0m00:51:12.237454 [info ] [MainThread]:   account: ar29333.ap-northeast-1.aws
+[0m00:51:12.237776 [info ] [MainThread]:   user: d.harato@datumstudio.jp
+[0m00:51:12.238085 [info ] [MainThread]:   database: d_harato_wh
+[0m00:51:12.238386 [info ] [MainThread]:   warehouse: d_harato_wh
+[0m00:51:12.238687 [info ] [MainThread]:   role: sysadmin
+[0m00:51:12.238989 [info ] [MainThread]:   schema: trocco_dbt
+[0m00:51:12.239290 [info ] [MainThread]:   authenticator: username_password_mfa
+[0m00:51:12.239591 [info ] [MainThread]:   private_key_path: None
+[0m00:51:12.239888 [info ] [MainThread]:   token: None
+[0m00:51:12.240181 [info ] [MainThread]:   oauth_client_id: None
+[0m00:51:12.240474 [info ] [MainThread]:   query_tag: None
+[0m00:51:12.240773 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:51:12.241070 [info ] [MainThread]:   host: None
+[0m00:51:12.241371 [info ] [MainThread]:   port: None
+[0m00:51:12.241741 [info ] [MainThread]:   proxy_host: None
+[0m00:51:12.242416 [info ] [MainThread]:   proxy_port: None
+[0m00:51:12.242800 [info ] [MainThread]:   protocol: None
+[0m00:51:12.243115 [info ] [MainThread]:   connect_retries: 1
+[0m00:51:12.243612 [info ] [MainThread]:   connect_timeout: None
+[0m00:51:12.244110 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:51:12.244511 [info ] [MainThread]:   retry_all: False
+[0m00:51:12.244851 [info ] [MainThread]:   insecure_mode: False
+[0m00:51:12.245178 [info ] [MainThread]:   reuse_connections: None
+[0m00:51:12.245725 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m00:51:12.252008 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:51:12.253633 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:51:12.254010 [debug] [MainThread]: On debug: select 1 as id
+[0m00:51:12.254349 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:51:23.725438 [debug] [MainThread]: SQL status: SUCCESS 1 in 11.0 seconds
+[0m00:51:23.727958 [debug] [MainThread]: On debug: Close
+[0m00:51:23.792533 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:51:23.793084 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:51:23.793480 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/dbt_project.yml> not found
+
+[0m00:51:23.796949 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 11.905967, "process_user_time": 2.133564, "process_kernel_time": 0.298896, "process_mem_max_rss": "129941504", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:51:23.797568 [debug] [MainThread]: Command `dbt debug` failed at 00:51:23.797428 after 11.91 seconds
+[0m00:51:23.797942 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:51:23.798376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104962f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2b940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2b880>]}
+[0m00:51:23.798852 [debug] [MainThread]: Flushing usage events
+[0m21:35:06.626535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102acf5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043ef1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043ef8b0>]}
+
+
+============================== 21:35:06.630710 | ce964d67-b01e-420b-9c7d-e5d6ca2929e4 ==============================
+[0m21:35:06.630710 [info ] [MainThread]: Running with dbt=1.8.7
+[0m21:35:06.631302 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/daisuke.harato/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init trocco_dbt_demo', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:35:06.646352 [debug] [MainThread]: Starter project path: /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m21:35:06.654835 [info ] [MainThread]: 
+Your new dbt project "trocco_dbt_demo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:35:06.655354 [info ] [MainThread]: Setting up your profile.
+[0m21:35:25.189476 [info ] [MainThread]: Profile trocco_dbt_demo written to /Users/daisuke.harato/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:35:25.222319 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 18.667303, "process_user_time": 1.549898, "process_kernel_time": 0.376663, "process_mem_max_rss": "177848320", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:35:25.223844 [debug] [MainThread]: Command `dbt init` succeeded at 21:35:25.223615 after 18.67 seconds
+[0m21:35:25.224761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102acf5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10442cd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043efdf0>]}
+[0m21:35:25.225536 [debug] [MainThread]: Flushing usage events
+[0m21:35:36.721680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072835e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111da5270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111da4910>]}
+
+
+============================== 21:35:36.725609 | 92955a92-8477-4dd0-a601-4947aafeab7f ==============================
+[0m21:35:36.725609 [info ] [MainThread]: Running with dbt=1.8.7
+[0m21:35:36.726150 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/daisuke.harato/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m21:35:36.739900 [info ] [MainThread]: dbt version: 1.8.7
+[0m21:35:36.740369 [info ] [MainThread]: python version: 3.10.10
+[0m21:35:36.740666 [info ] [MainThread]: python path: /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/venv/bin/python
+[0m21:35:36.740945 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m21:35:37.768217 [info ] [MainThread]: Using profiles dir at /Users/daisuke.harato/.dbt
+[0m21:35:37.768764 [info ] [MainThread]: Using profiles.yml file at /Users/daisuke.harato/.dbt/profiles.yml
+[0m21:35:37.769128 [info ] [MainThread]: Using dbt_project.yml file at /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/dbt_project.yml
+[0m21:35:37.769451 [info ] [MainThread]: adapter type: bigquery
+[0m21:35:37.769740 [info ] [MainThread]: adapter version: 1.8.3
+[0m21:35:37.770025 [info ] [MainThread]: Configuration:
+[0m21:35:37.770299 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:35:37.770558 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:35:37.770813 [info ] [MainThread]: Required dependencies:
+[0m21:35:37.771203 [debug] [MainThread]: Executing "git --help"
+[0m21:35:37.787588 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:35:37.788558 [debug] [MainThread]: STDERR: "b''"
+[0m21:35:37.788922 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:35:37.789372 [info ] [MainThread]: Connection:
+[0m21:35:37.789856 [info ] [MainThread]:   method: service-account
+[0m21:35:37.790166 [info ] [MainThread]:   database: 1
+[0m21:35:37.790435 [info ] [MainThread]:   execution_project: 1
+[0m21:35:37.790702 [info ] [MainThread]:   schema: 1
+[0m21:35:37.790960 [info ] [MainThread]:   location: US
+[0m21:35:37.791213 [info ] [MainThread]:   priority: interactive
+[0m21:35:37.791464 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m21:35:37.791777 [info ] [MainThread]:   impersonate_service_account: None
+[0m21:35:37.792030 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m21:35:37.792284 [info ] [MainThread]:   job_retries: 1
+[0m21:35:37.792532 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m21:35:37.792781 [info ] [MainThread]:   job_execution_timeout_seconds: 1
+[0m21:35:37.793085 [info ] [MainThread]:   timeout_seconds: 1
+[0m21:35:37.793377 [info ] [MainThread]:   client_id: None
+[0m21:35:37.794068 [info ] [MainThread]:   token_uri: None
+[0m21:35:37.794572 [info ] [MainThread]:   dataproc_region: None
+[0m21:35:37.794886 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m21:35:37.795165 [info ] [MainThread]:   gcs_bucket: None
+[0m21:35:37.795451 [info ] [MainThread]:   dataproc_batch: None
+[0m21:35:37.796164 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m21:35:37.895034 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m21:35:37.897980 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:35:37.900363 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: '1''
+[0m21:35:37.902338 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:35:37.902950 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:35:37.904273 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/dbt_project.yml> not found
+
+[0m21:35:37.904623 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 2] No such file or directory: '1'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:35:37.908107 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.2539871, "process_user_time": 1.601382, "process_kernel_time": 0.310854, "process_mem_max_rss": "181190656", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:35:37.909093 [debug] [MainThread]: Command `dbt debug` failed at 21:35:37.908824 after 1.25 seconds
+[0m21:35:37.910100 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:35:37.911387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072835e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127233220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127233eb0>]}
+[0m21:35:37.912422 [debug] [MainThread]: Flushing usage events
