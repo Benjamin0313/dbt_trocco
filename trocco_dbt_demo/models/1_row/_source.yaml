@@ -1,0 +1,104 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    # database: trocco-dbt
+    schema: d_harato_db
+    description: E-commerce data for the Jaffle Shop
+    tables:
+      - name: CUSTOMERS
+        tags: [raw, jaffle_shop, js]
+        description: 顧客情報
+      - name: ORDERS
+        tags: [raw, jaffle_shop, js]
+        description: 注文履歴
+        columns:
+          - name: id
+            description: 商品のオーダーid
+          - name: customer
+            description: 顧客id
+          - name: ordered_at
+            description: オーダー日付時刻
+          - name: subtotal
+            description: 購入金額 (税抜き)
+          - name: tax_paid
+            description: 消費税
+          - name: order_total
+            description: 購入金額 (税有り)
+      - name: ITEMS
+        tags: [raw, jaffle_shop, js]
+        description: 各オーダーで売れた商品履歴
+        columns:
+          - name: id
+            description: 各オーダーで売れた商品履歴
+          - name: order_id
+            description: オーダーid
+          - name: sku
+            description: 商品の管理id (単品管理id)
+      - name: PRODUCTS
+        tags: [raw, jaffle_shop, js]
+        description: 単品管理idに紐づく商品の詳細
+        columns:
+          - name: sku
+            description: 単品管理id
+          - name: name
+            description: 商品名
+          - name: type
+            description: 商品の取り扱い元のタイプ
+          - name: price
+            description: 商品価格
+          - name: description
+            description: 商品説明
+  - name: podb_weather_data
+    schema: japanese_weather_data
+    description: PODBの天気データ
+    tables:
+      - name: WT_MD
+        tags: [raw, podb]
+        description: 47都道府県の日時天気データ
+  - name: podb_calendar_data
+    schema: japanese_calendar_data
+    description: PODBのカレンダーデータ
+    tables:
+      - name: JAPAN_CALENDAR
+        tags: [raw, podb]
+        description: PODBのカレンダーデータ
+        columns:
+          - name: 日付
+            quote: true
+          - name: 曜日コード
+            quote: true
+          - name: 曜日
+            quote: true
+          - name: 祝日
+            quote: true
+          - name: 祝日名
+            quote: true
+          - name: 土日
+            quote: true
+          - name: 土日祝
+            quote: true
+          - name: 日祝
+            quote: true
+          - name: 振替休日
+            quote: true
+          - name: 休前日
+            quote: true
+          - name: 翌日が土祝となる平日
+            quote: true
+          - name: GW
+            quote: true
+          - name: GW_中間も休み
+            quote: true
+          - name: 年末年始
+            quote: true
+          - name: 連休
+            quote: true
+          - name: 当日からの連休数
+            quote: true
+          - name: 翌日からの連休数
+            quote: true
+          - name: 平日
+            quote: true
+          - name: 日祝明けの平日
+            quote: true

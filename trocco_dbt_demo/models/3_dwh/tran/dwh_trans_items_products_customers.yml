@@ -1,0 +1,96 @@
+version: 2
+
+models:
+  - name: dwh_trans_items_products_customers
+    description: >
+      itemsとproductsとcustomersをjoinした非正規形のテーブル
+      mart層から必要分をselectするほうが簡単だと判断したため作成
+
+    columns:
+      - name: buy_items_id
+        description: 商品の購入項目単位を管理するid
+        data_tests:
+          - not_null
+          - unique
+        data_type: string
+      - name: sku
+        description: 商品管理id
+        data_type: string
+      - name: customer_id
+        description: 顧客管理id
+        data_type: string
+      - name: subtotal
+        description: 税抜き前売上
+        data_type: int64
+      - name: tax_paid
+        description: 税金分の売上
+        data_type: int64
+      - name: order_total
+        description: 税金込みの売上
+        data_type: int64
+      - name: ordered_date
+        description: 商品の取引日付
+        data_type: date
+      - name: 曜日コード
+        quote: true
+        description: 1:月,2:火,3:水,4:木,5:金,6:土,7:日
+        data_type: string
+      - name: 曜日
+        quote: true
+        data_type: string
+      - name: 土日祝
+        quote: true
+        data_type: boolean
+      - name: 祝日名
+        quote: true
+        data_type: string
+      - name: GW
+        quote: true
+        data_type: boolean
+      - name: GW_中間も休み
+        description: >
+          GWの中間休みに有給を使った場合のGW休み期間
+          1,2週間ほどの長期休暇となる
+        quote: true
+        data_type: boolean
+      - name: 年末年始
+        quote: true
+        data_type: boolean
+      - name: 連休
+        quote: true
+        data_type: boolean
+      - name: 観測所名
+        quote: true
+        description: >
+          天候の観測をしている場所の名前。
+          今回はjaffle_shopが東京にあると仮定しているため、観測所は「東京」を使用している
+        data_type: string
+      - name: 平均気温
+        quote: true
+        description: その日の平均気温
+        data_type: int64
+      - name: 平均湿度
+        quote: true
+        description: その日の平均湿度
+        data_type: int64
+      - name: 天気概況_昼
+        quote: true
+        description: 昼間の天気概要 6時～18時 の時間
+        data_type: string
+      - name: 天気概況_夜
+        quote: true
+        description: 夜間の天気概要 18時～翌6時 の時間
+        data_type: string
+      - name: gender
+        description: 性別 (男・女・その他)
+        data_type: string
+      - name: age_group
+        description: >
+          10歳ごとの年齢グループ (例: 10-19, 20-29 ...)
+          100歳を超える場合は100歳以上でグループを作る
+        data_type: string
+      - name: email
+        data_type: string
+      - name: product_name
+        description: 商品名
+        data_type: string

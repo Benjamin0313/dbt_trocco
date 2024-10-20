@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: dwh_master_customers
+    description: >
+      customer_idに紐づく顧客の詳細情報があるマスタテーブル
+
+    config:
+      contract:
+        enforced: true
+
+    columns:
+      - name: customer_id
+        description: >
+          顧客id
+        data_tests:
+          - not_null
+          - unique
+        data_type: string  # 顧客IDは通常文字列として扱われる
+      - name: gender
+        description: 性別 (男・女・その他)
+        data_type: string  # 性別は文字列
+      - name: age
+        description: 年齢 (10 <= x < 110)
+        data_type: integer  # 年齢は整数値
+      - name: email
+        description: メールアドレス
+        data_type: string  # メールアドレスは文字列
+      - name: age_group
+        description: >
+          10歳ごとの年齢グループ (例: 10-19, 20-29 ...)
+          100歳を超える場合は100歳以上でグループを作る
+        data_type: string  # 年齢グループも文字列

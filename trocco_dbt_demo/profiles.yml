@@ -1,0 +1,12 @@
+trocco_dbt_demo: # this needs to match the profile in your dbt_project.yml file
+  target: dev
+  outputs:
+    dev:
+        type: bigquery
+        method: service-account
+        keyfile: /Users/daisuke.harato/Library/CloudStorage/Box-Box/2101230001_daisuke.harato/trocco/key/trocco-dbt-2f5195ef543e.json
+        project: trocco-dbt
+        dataset: d_harato_db
+        threads: 1
+        timeout_seconds: 300
+        location: asia-northeast1

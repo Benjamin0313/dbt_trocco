@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dwh_master_products
+    description: >
+      skuに紐づく商品の詳細情報があるマスタテーブル
+
+    config:
+      contract:
+        enforced: true
+
+    columns:
+      - name: sku
+        description: >
+          商品を単品で管理するid
+          ストックキーピングユニット(Stock Keeping Unit)の略
+        data_tests:
+          - not_null
+          - unique
+        data_type: string  # SKUは通常文字列
+      - name: name
+        description: 商品名
+        data_type: string  # 商品名は文字列
+      - name: type
+        description: 商品の取り扱い元のタイプ
+        data_type: string  # タイプは文字列
+      - name: price
+        description: 商品価格
+        data_type: float  # 商品価格は通常浮動小数点数
+      - name: description
+        description: 商品説明
+        data_type: string  # 商品説明は文字列

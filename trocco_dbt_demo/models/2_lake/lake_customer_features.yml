@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: lake_customer_features
+    description: >
+      customersの情報に性別・年齢・Eメールを紐づけたデータ。
+      性別・年齢・Eメールの情報はランダムでデータが欠損している。
+
+    columns:
+      - name: customer_id
+        description: 顧客id
+        data_tests:
+          - not_null
+          - unique
+      - name: gender
+        description: 性別 (男・女・その他)
+      - name: age
+        description: 年齢 (10 <= x < 110)
+      - name: email
+        description: Eメール
